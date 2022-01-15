@@ -1,0 +1,240 @@
+/*-------- Fonts ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*-------- Utilities------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f0f0;;
+}
+/* -----header----- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title{
+    font-size: 24px;
+    color: #3A3A3A;
+    margin-left: 120px;
+}
+/*---------- main------------ */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*------------- influencer journey-------- */
+.container{
+    width: 1120px; 
+    padding:30px;
+
+}
+.influencer-journey{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.influencer-career{
+    margin-right: 120px;
+}
+.career-title{
+    color: #3A3A3A;
+    font-size: 52px; 
+    margin-bottom: 16px; 
+     
+}
+.career-details{
+    margin-bottom: 26px;
+    color: #3A3A3A;
+}
+.career-more-details{
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px; 
+    background-color: #E02C6D
+    ;
+}
+.influence-item{
+    margin-right: 0;
+}
+.influence-item:hover{
+    transform: scale(1.2);
+    transition: transform 3s;
+}
+hr{ 
+    width:1120px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* company icons */
+.icons{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    margin-left: 70px; 
+}
+.icon img{
+    width: 70.12px;
+    height: 39.61px;
+    
+}
+/* Popular collections */
+.section-title{
+    text-align: center;
+}
+.collections-product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    padding-left: 20px;
+}
+.product{
+    border-radius: 10px;
+    width: 300px;
+    height: 470px;
+    padding: 10px;
+    background-color: white;
+}
+.product-title{
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+.product-description{
+    color: rgb(99, 97, 97);
+}
+.fas{
+    margin-top: 0;
+}
+.fa-star{
+    font-size: 14px;
+    color:rgb(250, 180, 4);
+}
+.fa-star-half{
+    font-size: 14px;
+    color:rgb(250, 180, 4);
+}
+
+.see-more{
+    color: red;
+    text-align: end;
+}
+/* Special features */
+.special-features{
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 0px;
+}
+.feature-item img{
+    width: 80%;
+    height: 85%;
+}
+.item-details{
+    margin-bottom: 30px;
+}
+.order-now{
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px; 
+    background-color: #E02C6D;
+    margin-top: 20px;
+}
+/* Footer section */
+footer{
+    background-color: #0A0826;
+    width: 100%;
+    height: 200px;
+
+}
+ .footer-title{
+    font-size: 24px;
+    padding-top: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+} 
+.copyright-law{
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    color: #D9DBE1;
+} 
+.social-media-link{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.fab{
+    padding: 10px;
+}
+
+/* Media query for mobile device */
+@media only screen and (max-width:688px){
+    header{
+        align-items: center;
+    }
+    hr{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .influencer-journey{
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .collections-product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .special-features{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+    }
+    
+}
+/* Media query for Tablet */
+@media only screen and (min-width:689px) and (max-width:992px){
+    header{
+        align-items: center;
+    }
+    .influence-item:hover{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .influencer-journey{
+        flex-direction: column;
+        align-items: center;
+    }
+    .collections-product{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .special-features{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+        align-items: center;
+    }
+    
+}
